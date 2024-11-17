@@ -1,20 +1,30 @@
 import React from "react";
 import { motion } from "framer-motion";
+import cv from "../assets/myCv/myCv.pdf"
+
 
 const Resume = () => {
+
+  const handleDownload = () => {
+    const url = cv; // My Cv Part....
+    const link = document.createElement("a");
+    link.href = url;
+    link.setAttribute("download", true);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
-    <div id="resume" className=" h-full w-full ps-8 md:ps-10 lg:ps-20 xl:ps-64 2xl:ps-80">
+    <div
+      id="resume"
+      className=" h-full w-full ps-8 md:ps-10 lg:ps-20 xl:ps-64 2xl:ps-80"
+    >
       <div className="pb-10 lg:pb-2 pt-16">
         <span className="text-3xl text-[#173b6c] font-semibold xl:ps-5">
-          Resume
+          Resume :
         </span>
         <p className="border-b-4 border-[#149ddd] w-14 pt-3 xl:ms-5"></p>
-        <p className="text-gray-800 pt-5 xl:p-5 md:text-lg xl:text-[16px] xl:leading-6">
-          Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
-          aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos
-          quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-          fugiat sit in iste officiis commodi quidem hic quas.
-        </p>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:mx-5 gap-2">
@@ -31,18 +41,20 @@ const Resume = () => {
                 <div className="h-full ps-2 pt-10">
                   <div className="w-[16px] h-[16px]  border-2 border-[#1f5297] absolute -left-[10px] -top-4 rounded-full"></div>
                   <h1 className="text-xl font-medium ps-3 -mt-16">
-                    Alex Smith
+                    Adebayo Opeyemi Paul
                   </h1>
                   <p className="ps-3 italic leading-6">
-                    Innovative and deadline-driven Graphic Designer with 3+
-                    years of experience designing and developing user-centered
-                    digital/print marketing material from initial concept to
-                    final, polished deliverable.
+                    A passionate front-end developer crafting seamless user
+                    experiences with cutting-edge technologies. Dedicated to
+                    responsive design, ensuring your site looks stunning on any
+                    device. Adept at collaborating with cross-functional teams
+                    to bring creative visions to life. Ready to turn your
+                    digital ideas into reality with clean, efficient code.
                   </p>
                   <ul className="list-disc ps-8 pt-3 flex flex-col gap-3">
-                    <li>Portland par 127,Orlando, FL</li>
-                    <li>(123) 456-7891</li>
-                    <li>alice.barkley@example.com</li>
+                    <li>Ibadan Airport, Oyo State, Nigeria</li>
+                    <li>(+2347016367643)</li>
+                    <li>docpaul2016@gmail.com</li>
                   </ul>
                 </div>
               </div>
@@ -54,25 +66,27 @@ const Resume = () => {
                 <div className="h-full ps-2 pt-10">
                   <div className="w-[16px] h-[16px]  border-2 border-[#1f5297] absolute -left-[10px] -top-4 rounded-full"></div>
                   <h1 className="text-xl font-medium ps-3 pb-1 -mt-16 tracking-tighter">
-                    MASTER OF FINE ARTS & GRAPHIC DESIGN
+                    National Open University Of Nigeria
                   </h1>
                   <span className="bg-[#e4edf9] ms-3 px-3 italic">
-                    2015-2016
+                    2019-2024
                   </span>
-                  <p className="italic py-2 ps-3">
-                    Rochester Institute of Technology, Rochester, NY
+                  <p className="italic py-2 ps-3 font-semibold">
+                    Bachelor’s Degree in Information Communication Technology
                   </p>
                   <p className="ps-3 italic leading-6">
-                    Innovative and deadline-driven Graphic Designer with 3+
-                    years of experience designing and developing user-centered
-                    digital/print marketing material from initial concept to
-                    final, polished deliverable.
+                    I have a degree in Information Communication Technology,
+                    where I gained expertise in areas such as networking, web
+                    development and database management. I have hands-on
+                    experience with technologies like [HTML, CSS, Tailwind CSS,
+                    React etc], and I am eager to apply my skills in a
+                    real-world setting to help organizations grow.
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="">
+            {/* <div className="">
               <div className="border-l-2 border-[#1f5297] relative mt-2">
                 <div className="w-[16px] h-[16px]  border-2 border-[#1f5297] absolute -left-[10px] -top-4 rounded-full"></div>
                 <div className="mt-1 lg:-mt-10">
@@ -93,7 +107,7 @@ const Resume = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </motion.div>
         <motion.div
@@ -107,29 +121,31 @@ const Resume = () => {
             <div className="h-full ps-2">
               <div className="w-[16px] h-[16px]  border-2 border-[#1f5297] absolute -left-[10px] -top-4 rounded-full"></div>
               <h1 className="text-lg lg:text-xl font-medium ps-3 pb-1 tracking-tighter">
-                SENIOR GRAPHIC DESIGN SPECIALIST
+                Frontend Web Developer
               </h1>
-              <span className="bg-[#e4edf9] ms-3 px-3 italic">2015-2016</span>
+              <span className="bg-[#e4edf9] ms-3 px-3 italic">
+                2023-till-date
+              </span>
               <p className="italic py-2 ps-3">
-                Rochester Institute of Technology, Rochester, NY
+                Placid Gloabl International Limited
               </p>
 
               <ul className="list-disc ps-8 pt-3 flex flex-col gap-3">
                 <li>
-                  Lead in the design, development, and implementation of the
-                  graphic, layout, and production communication materials
+                  Implemented and maintained front-end web applications,
+                  reduction in page load speeds and conversion rates by
+                  utilizing modern web technologies such as React-JS, Tailwind
+                  and best practices for user experience and accessibility.
                 </li>
                 <li>
-                  Delegate tasks to the 7 members of the design team and provide
-                  counsel on all aspects of the project.
+                  Assisted in the development and maintenance of front-end web
+                  applications, resulting in a positive impact on the company's
+                  overall performance.
                 </li>
                 <li>
-                  Delegate tasks to the 7 members of the design team and provide
-                  counsel on all aspects of the project.
-                </li>
-                <li>
-                  Delegate tasks to the 7 members of the design team and provide
-                  counsel on all aspects of the project.
+                  Provided support to senior front-end developers after becoming
+                  proficient in React Js, resulting a in stronger, more
+                  efficient tech team.
                 </li>
               </ul>
             </div>
@@ -138,20 +154,29 @@ const Resume = () => {
             <div className="h-full ps-2 ">
               <div className="w-[16px] h-[16px]  border-2 border-[#1f5297] absolute -left-[10px] -top-4 rounded-full"></div>
               <h1 className="text-lg lg:text-xl font-medium ps-3 pb-1 tracking-tighter">
-                GRAPHIC DESIGN SPECIALIST
+                Frontend Web Developer
               </h1>
-              <span className="bg-[#e4edf9] ms-3 px-3 italic">2015-2016</span>
-              <p className="ps-3 italic leading-6">
-                Innovative and deadline-driven Graphic Designer with 3+ years of
-                experience designing and developing user-centered digital/print
-                marketing material from initial concept to final, polished
-                deliverable.
-              </p>
+              <span className="bg-[#e4edf9] ms-3 px-3 italic">
+                2024-till-date
+              </span>
+              <p className="ps-3 italic leading-6">Brainiac Global Solution</p>
               <ul className="list-disc ps-8 pt-3 flex flex-col gap-3">
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
+                <li>
+                  Worked with cross-functional teams to develop and execute
+                  on-time and on-budget projects and initiatives by effectively
+                  communicating project timelines, progress, and objectives
+                  using tools such as Google Meet and Zoom.
+                </li>
               </ul>
+              <div className="md:px-10 py-5 flex gap-3 items-center">
+                <p>For More Details:</p>
+                <button
+                  onClick={handleDownload}
+                  className="bg-[#149ddd] px-10 py-2 text-white rounded-xl"
+                >
+                  Download Cv
+                </button>
+              </div>
             </div>
           </div>
         </motion.div>

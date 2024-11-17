@@ -1,20 +1,21 @@
 import React, { useState } from "react";
-import logo from "../assets/logo.jpg";
+import logo from "../assets/laptop.jpeg";
 import {
-  FaFacebook,
-  FaGooglePlus,
   FaInstagram,
   FaLinkedin,
   FaTwitter,
   FaArrowLeft,
+  FaWhatsapp,
+  FaTelegram,
 } from "react-icons/fa";
 import { navItems } from "../constants";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(true);
   return (
     <div
-      className={`flex flex-col z-10 fixed top-0 p-3 lg:p-5 h-screen bg-[#040b14] ${
+      className={`flex flex-col z-10 fixed top-0 p-3 lg:p-5 h-screen bg-[#07061b] ${
         open
           ? "w-[75%] sm:w-[70%] md:w-[40%] lg:w-[30%] xl:w-[20%]"
           : "w-0 lg:w-14 xl:w-[20%]"
@@ -31,37 +32,50 @@ const Navbar = () => {
           !open && "scale-0 xl:scale-100"
         }`}
       >
-        <div className="w-[50%] mx-auto border-8 border-gray-700 rounded-full">
-          <img src={logo} alt="profile" className={`rounded-full`} />
+        <div className="mx-auto w-[30%]">
+          <img
+            src={logo}
+            alt="profile"
+            className="rounded-full w-32 h-20 border-8 border-[#222]"
+          />
         </div>
-        <h1 className="text-white text-lg pt-2 text-center font-bold">
-          Alex Smilth
+        <h1 className="text-[#149ddd] text-lg pt-2 text-center font-bold">
+          PaulTechy
         </h1>
         <div className="flex items-center justify-center gap-4 text-lg text-white p-2">
-          <a href="">
+          <a
+            href="https://wa.me/2347016367643"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <p className="bg-gray-800 rounded-full p-2">
-              <FaFacebook />
+              <FaWhatsapp />
+            </p>
+          </a>
+
+          <a
+            href="https://t.me/paulTechy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p className="bg-gray-800 rounded-full p-2">
+              <FaTelegram />
+            </p>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/Adebayo Opeyemi Paul"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p className="bg-gray-800 rounded-full p-2">
+              <FaLinkedin />
             </p>
           </a>
 
           <a href="">
             <p className="bg-gray-800 rounded-full p-2">
-              <FaGooglePlus />
-            </p>
-          </a>
-          <a href="">
-            <p className="bg-gray-800 rounded-full p-2">
-              <FaInstagram />
-            </p>
-          </a>
-          <a href="">
-            <p className="bg-gray-800 rounded-full p-2">
               <FaTwitter />
-            </p>
-          </a>
-          <a href="">
-            <p className="bg-gray-800 rounded-full p-2">
-              <FaLinkedin />
             </p>
           </a>
         </div>
@@ -86,9 +100,9 @@ const Navbar = () => {
           !open && "scale-0 xl:scale-100"
         }`}
       >
-        <p>© Copyright portfolio</p>
+        <p>© Copyright Myportfolio</p>
         <p>
-          Designed By <span className="text-[#149ddd]">Placid Global</span>
+          Designed By <span className="text-[#149ddd]">PaulTechy</span>
         </p>
       </div>
     </div>

@@ -40,7 +40,7 @@ export const navItems = [
   {
     label: (
       <Link
-        activeClass="active"
+        
         to="intro"
         spy={true}
         smooth={true}
@@ -53,10 +53,11 @@ export const navItems = [
     href: "#about",
     icon: <IoPerson />,
   },
+  
   {
     label: (
       <Link
-        activeClass="active"
+       
         to="resume"
         spy={true}
         smooth={true}
@@ -72,39 +73,23 @@ export const navItems = [
   {
     label: (
       <Link
-        activeClass="active"
+       
         to="portfolio"
-        spy={true}
-        smooth={true}
-        offset={700}
-        duration={500}
-      >
-        Portfolio
-      </Link>
-    ),
-    href: "#",
-    icon: <RiExportFill />,
-  },
-  {
-    label: (
-      <Link
-        activeClass="active"
-        to="service"
         spy={true}
         smooth={true}
         offset={40}
         duration={500}
       >
-        Service
+        Portfolio
       </Link>
     ),
-    href: "#",
-    icon: <HiServer />,
+    href: "#portfolio",
+    icon: <RiExportFill />,
   },
   {
     label: (
       <Link
-        activeClass="active"
+       
         to="contact"
         spy={true}
         smooth={true}
@@ -120,10 +105,9 @@ export const navItems = [
 ];
 
 export const aboutMe = [
-  { data: "Birthday: 1 May 1995", value: "Age: 30" },
-  { data: "Website: www.placid.com", value: "Degree: Masters" },
-  { data: "Phone: +1234567890", value: "PhEmailone: email@example.com" },
-  { data: "City: New York, USA", value: "Freelance: Available" },
+  { data: "LinkedIn: Adebayo Opeyemi Paul", value: "Education: Information Technology" },
+  { data: "Phone: +2347016367643", value: "Email: docpaul2016@gmail,com" },
+  { data: "City:Ibadan,Oyo State, Nigeria ", value: "Freelance: Available" },
 ];
 
 export const fact = [
@@ -209,7 +193,7 @@ export const contact = [
       </div>
     ),
     title1: "Location:",
-    value1: "A108 Adam Street, New York, NY 535022",
+    value1: "Ibadan Airport, Oyo State Nigeria",
 
     icons2: (
       <div className="bg-[#d1eaf6] hover:bg-[#149ddd] text-[#149ddd] hover:text-white p-2 rounded-full">
@@ -217,7 +201,7 @@ export const contact = [
       </div>
     ),
     title2: "Email:",
-    value2: " info@example.com",
+    value2: " docpaul2016@gmail.com",
 
     icons3: (
       <div className="bg-[#d1eaf6] hover:bg-[#149ddd] text-[#149ddd] hover:text-white p-2 rounded-full">
@@ -225,6 +209,6 @@ export const contact = [
       </div>
     ),
     title3: "Call:",
-    value3: "+1 5589 55488 55s",
+    value3: "+2347016367643",
   },
 ];
