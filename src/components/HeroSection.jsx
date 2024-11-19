@@ -1,5 +1,8 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
+import bg1 from "../assets/bgHero.jpg"
+import bg2 from "../assets/mobileImg.jpg"
+
 
 
 const HeroSection = () => {
@@ -9,13 +12,13 @@ const HeroSection = () => {
       <div
         className="absolute inset-0 bg-cover bg-no-repeat"
         style={{
-          backgroundImage: `url('../src/assets/mobileImg.jpg')`,
+          backgroundImage: `url(${bg2})`,
         }}
       ></div>
       <div
         className="absolute inset-0 bg-cover bg-no-repeat hidden lg:block"
         style={{
-          backgroundImage: `url('../src/assets/bgHero.jpg')`,
+          backgroundImage: `url(${bg1})`,
         }}
       ></div>
 
