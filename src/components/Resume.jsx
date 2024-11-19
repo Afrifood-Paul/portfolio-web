@@ -168,7 +168,7 @@ const Resume = () => {
                   using tools such as Google Meet and Zoom.
                 </li>
               </ul>
-              <div className="md:px-10 py-5 flex gap-3 items-center">
+              <div className="md:px-10 py-5 flex flex-col md:flex-row gap-3 items-center">
                 <p>For More Details:</p>
                 <button
                   onClick={handleDownload}

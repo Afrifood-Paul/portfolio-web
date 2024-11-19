@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../assets/laptop.jpeg";
+import logo from "../assets/Pics.jpg";
 import {
   FaInstagram,
   FaLinkedin,
@@ -36,7 +36,7 @@ const Navbar = () => {
           <img
             src={logo}
             alt="profile"
-            className="rounded-full w-32 h-20 border-8 border-[#222]"
+            className="rounded-[50%] w-32 h-32 border-[#222]"
           />
         </div>
         <h1 className="text-[#149ddd] text-lg pt-2 text-center font-bold">

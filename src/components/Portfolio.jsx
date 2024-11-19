@@ -16,31 +16,23 @@ const Portfolio = () => {
           Portfolio:
         </span>
         <p className="border-b-4 border-[#149ddd] w-14 pt-3 xl:ms-5"></p>
-        <p className="pt-5 text-black px-5">
-          Please note that I have also contributed to other confidential
-          projects in collaboration with teams of developers. However, due to
-          the Non-Disclosure Agreements (NDAs) I have signed, I am unable to
-          share details about these projects.
-        </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-        <div className="w-full h-auto py-10 rounded-lg flex flex-col group">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 md:mx-10 lg:mx-0">
+        <div className="w-full h-auto md:py-10 rounded-lg flex flex-col group">
           <motion.div
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: 100 }}
             transition={{ duration: 1.2 }}
             className="w-full h-[80%] overflow-hidden rounded-lg"
           >
-            <a href="https://heritagecapitals.com.ng/">
-              <img
-                className="w-full h-60 object-cover group-hover:scale-110 duration-300"
-                src={user1}
-                target="_blank"
-                rel="noopener noreferrer"
-                alt=""
-              />
-            </a>
+            <img
+              className="w-full h-60 object-cover group-hover:scale-110 duration-300"
+              src={user1}
+              target="_blank"
+              rel="noopener noreferrer"
+              alt=""
+            />
           </motion.div>
           <div className="mt-3 w-full flex justify-center items-center gap-2">
             <a
@@ -51,14 +43,16 @@ const Portfolio = () => {
             >
               Heritage Capitals
             </a>
+            {/* Icon link */}
             <div className="flex gap-2">
-              <span
-                className="text-lg w-10 h-10 rounded-full bg-black inline-flex
-              justify-center items-center text-gray-400 hover:text-orange-500 duration-300 cursor-pointer"
+              <a
+                href="https://heritagecapitals.com.ng/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-orange-500 duration-300 cursor-pointer"
               >
-                {" "}
                 <TbWorldWww />
-              </span>
+              </a>
             </div>
           </div>
           <motion.div
@@ -76,15 +70,13 @@ const Portfolio = () => {
             transition={{ duration: 1.2 }}
             className="w-full h-[80%] overflow-hidden rounded-lg"
           >
-            <a href="https://harmoniespringschools.com/">
-              <img
-                className="w-full h-60 object-cover group-hover:scale-110 duration-300"
-                src={user3}
-                target="_blank"
-                rel="noopener noreferrer"
-                alt=""
-              />
-            </a>
+            <img
+              className="w-full h-60 object-cover group-hover:scale-110 duration-300"
+              src={user3}
+              target="_blank"
+              rel="noopener noreferrer"
+              alt=""
+            />
           </motion.div>
           <div className="mt-3 w-full flex justify-center items-center gap-2">
             <a
@@ -95,14 +87,16 @@ const Portfolio = () => {
             >
               Harmonie Spring School
             </a>
+            {/* Icon link */}
             <div className="flex gap-2">
-              <span
-                className="text-lg w-10 h-10 rounded-full bg-black inline-flex
-              justify-center items-center text-gray-400 hover:text-orange-500 duration-300 cursor-pointer"
+              <a
+                href="https://harmoniespringschools.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-orange-500 duration-300 cursor-pointer"
               >
-                {" "}
                 <TbWorldWww />
-              </span>
+              </a>
             </div>
           </div>
           <motion.div
@@ -120,17 +114,16 @@ const Portfolio = () => {
             transition={{ duration: 1.2 }}
             className="w-full h-[80%] overflow-hidden rounded-lg"
           >
-            <a href="http://www.openmindedservices.com">
-              <img
-                className="w-full h-60 object-cover group-hover:scale-110 duration-300"
-                src={user2}
-                target="_blank"
-                rel="noopener noreferrer"
-                alt=""
-              />
-            </a>
+            <img
+              className="w-full h-60 object-cover group-hover:scale-110 duration-300"
+              src={user2}
+              target="_blank"
+              rel="noopener noreferrer"
+              alt=""
+            />
           </motion.div>
           <div className="mt-3 w-full flex justify-center items-center gap-2">
+            {/* Main link */}
             <a
               href="http://www.openmindedservices.com"
               target="_blank"
@@ -139,14 +132,17 @@ const Portfolio = () => {
             >
               Open Minded Services
             </a>
+
+            {/* Icon link */}
             <div className="flex gap-2">
-              <span
-                className="text-lg w-10 h-10 rounded-full bg-black inline-flex
-              justify-center items-center text-gray-400 hover:text-orange-500 duration-300 cursor-pointer"
+              <a
+                href="http://www.openmindedservices.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-orange-500 duration-300 cursor-pointer"
               >
-                {" "}
                 <TbWorldWww />
-              </span>
+              </a>
             </div>
           </div>
           <motion.div
@@ -157,6 +153,11 @@ const Portfolio = () => {
           ></motion.div>
         </div>
       </div>
+      <p className="pb-10 text-black text-center md:text-left lg:px-5">
+        I have also contributed to other confidential projects in collaboration
+        with teams of developers. However, due to the Non-Disclosure Agreements
+        (NDAs) I have signed, I am unable to share details about these projects.
+      </p>
     </div>
   );
 };

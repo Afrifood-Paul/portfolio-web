@@ -7,23 +7,12 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div
-     
-      className="h-full bg-white ps-8 md:ps-10 lg:ps-20 xl:ps-64 2xl:ps-80"
-    >
+    <div className="h-full bg-white ps-8 md:ps-10 lg:ps-20 xl:ps-64 2xl:ps-80">
       <div className="pb-10 pt-16 lg:w-[90%]">
         <span className="text-3xl text-[#173b6c] font-semibold xl:ps-5">
           About
         </span>
         <p className="border-b-4 border-[#149ddd] w-14 pt-3 xl:ms-5"></p>
-        {/* <p className="text-gray-800 pt-5 xl:p-5 md:text-lg xl:text-[16px] xl:leading-6">
-          A passionate front-end developer crafting seamless user experiences
-          with cutting-edge technologies and open to learning more from senior
-          developers. Dedicated to responsive design, ensuring your site looks
-          stunning on any device. Adept at collaborating with cross-functional
-          teams to bring creative visions to life. Ready to turn your digital
-          ideas into reality with clean and efficient code.
-        </p> */}
       </div>
 
       <div className="grid grid-col-2 lg:grid-cols-3 lg:gap-10">
@@ -34,8 +23,8 @@ const About = () => {
         >
           <img
             src={logo}
-            alt=""
-            className=" flex mb-10 lg:ms-1 xl:ms-5 ms-14 border-4 lg:border border-gray-700 rounded-full lg:rounded-none md:w-full h-[80%]"
+            alt="Logo"
+            className="w-full mx-auto max-w-[200px] md:max-w-[300px] lg:max-w-[400px] h-auto rounded lg:rounded-none mb-10 "
           />
         </motion.div>
 
@@ -50,31 +39,30 @@ const About = () => {
               A Frontend Web Developer
             </h1>
             <p className="tracking-wide py-3 text-sm md:text-lg lg:text-sm xl:leading-6">
-              I’m a skilled front-end developer with expertise in
-              React, Typescript, Next.Js, Tailwind CSS, and API integration,
-              focused on building responsive, user-friendly applications.
-              Recently, I developed a CBT (Computer-Based Testing) platform that
-              allows students to take exams online, incorporating a smooth user
+              I’m a skilled front-end developer with expertise in React,
+              Typescript, Next.Js, Tailwind CSS, and API integration, focused on
+              building responsive, user-friendly applications. Recently, I
+              developed a CBT (Computer-Based Testing) platform that allows
+              students to take exams online, incorporating a smooth user
               experience with dynamic API-driven content
             </p>
           </div>
-          <div className="-mt-7 sm:-mt-24 lg:-mt-14 xl:-mt-5">
-            {aboutMe.map((item, index) => (
-              <div className="py-5 grid lg:grid-cols-2">
-                <div className="flex items-center">
+          <div className="">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
+              {aboutMe.map((item, index) => (
+                <div key={index} className="mb-2 flex items-center py-5">
                   <PiLessThanThin className="pe-2 w-9 text-[#149ddd]" />
-                  <p key={index} className="font-semibold">
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#149ddd] hover:underline"
+                  >
                     {item.data}
-                  </p>
+                  </a>
                 </div>
-                <div className="flex items-center">
-                  <PiLessThanThin className="pe-2 w-9 text-[#149ddd]" />
-                  <p key={index} className="font-semibold">
-                    {item.value}
-                  </p>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
           <div className="text-sm md:text-lg lg:text-sm tracking-wide py-3">
             <p className="tracking-wide py-3 text-sm md:text-lg lg:text-sm xl:leading-6">

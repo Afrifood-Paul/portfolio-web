@@ -39,31 +39,17 @@ export const navItems = [
   },
   {
     label: (
-      <Link
-        
-        to="intro"
-        spy={true}
-        smooth={true}
-        offset={720}
-        duration={200}
-      >
+      <Link to="intro" spy={true} smooth={true} offset={720} duration={200}>
         About
       </Link>
     ),
     href: "#about",
     icon: <IoPerson />,
   },
-  
+
   {
     label: (
-      <Link
-       
-        to="resume"
-        spy={true}
-        smooth={true}
-        offset={40}
-        duration={500}
-      >
+      <Link to="resume" spy={true} smooth={true} offset={40} duration={500}>
         Resume
       </Link>
     ),
@@ -72,14 +58,7 @@ export const navItems = [
   },
   {
     label: (
-      <Link
-       
-        to="portfolio"
-        spy={true}
-        smooth={true}
-        offset={40}
-        duration={500}
-      >
+      <Link to="portfolio" spy={true} smooth={true} offset={40} duration={500}>
         Portfolio
       </Link>
     ),
@@ -88,14 +67,7 @@ export const navItems = [
   },
   {
     label: (
-      <Link
-       
-        to="contact"
-        spy={true}
-        smooth={true}
-        offset={40}
-        duration={500}
-      >
+      <Link to="contact" spy={true} smooth={true} offset={40} duration={500}>
         Contact
       </Link>
     ),
@@ -105,9 +77,18 @@ export const navItems = [
 ];
 
 export const aboutMe = [
-  { data: "LinkedIn: Adebayo Opeyemi Paul", value: "Education: Information Technology" },
-  { data: "Phone: +2347016367643", value: "Email: docpaul2016@gmail,com" },
-  { data: "City:Ibadan,Oyo State, Nigeria ", value: "Freelance: Available" },
+  {
+    data: "LinkedIn: Adebayo Opeyemi Paul",
+    link: "https://www.linkedin.com/in/adebayo-opeyemi-paul-886147270?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BTMo%2FQbzEQTGS3Du66MKQcg%3D%3D",
+  },
+  {
+    data: "Phone: +2347016367643",
+    link: "tel:+2347016367643",
+  },
+  {
+    data: "Email: docpaul2016@gmail.com",
+    link: "mailto:docpaul2016@gmail.com",
+  },
 ];
 
 export const fact = [

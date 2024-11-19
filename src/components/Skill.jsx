@@ -1,5 +1,5 @@
 import React from "react";
-import ProgressBar from "@ramonak/react-progress-bar";
+
 
 const Skill = () => {
   return (
@@ -7,12 +7,12 @@ const Skill = () => {
       id="skill"
       className="pb-20 bg-[#f5f8fd] h-full w-full ps-8 md:ps-10 lg:ps-20 xl:ps-64 2xl:ps-80"
     >
-      <div className="pb-10 lg:pb-5 pt-16">
+      <div className="pb-10 lg:pb-5 lg:pt-16">
         <span className="text-3xl text-[#173b6c] font-semibold xl:ps-5">
           Skills
         </span>
         <p className="border-b-4 border-[#149ddd] w-14 pt-3 xl:ms-5"></p>
-        <p className="text-gray-800 pt-5 xl:p-5 md:text-lg xl:text-[16px] xl:leading-6">
+        <p className="text-black pt-5 xl:p-5 md:text-lg xl:text-[16px] xl:leading-6">
           With a strong blend of technical expertise in front-end development,
           leadership experience, and a passion for creating impactful,
           user-centered designs, I am ready to bring innovative solutions and

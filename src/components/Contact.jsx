@@ -2,7 +2,7 @@ import React from "react";
 import { contact } from "../constants";
 import { Card, Input, Button } from "@material-tailwind/react";
 // import { motion } from "framer-motion";
-import { FaArrowUp } from "react-icons/fa6";
+import { FaArrowUp, FaLinkedin, FaTelegram, FaTwitter, FaWhatsapp } from "react-icons/fa6";
 
 const Contact = () => {
   const top = () => {
@@ -16,7 +16,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="h-full w-[100%] ps-8 md:ps-10 lg:ps-20 xl:ps-64 2xl:ps-80 "
+      className="h-full w-[100%] ps-8 md:ps-10 lg:ps-20 xl:ps-64 2xl:ps-80 bg-[#f5f8fd]"
     >
       <div className="pb-10 lg:pb-5 pt-16">
         <span className="text-3xl text-[#173b6c] font-semibold xl:ps-5">
@@ -30,7 +30,7 @@ const Contact = () => {
         </p>
       </div>
 
-      <div className="lg:mx-5 grid grid-cols-1  gap-5">
+      <div className="lg:mx-5 grid grid-cols-1  gap-5 pb-10">
         <div className="bg-[#f5f8fd] h-full lg:w-full col-span-2 shadow-2xl">
           <div>
             {contact.map((item, index) => (
@@ -59,20 +59,48 @@ const Contact = () => {
               </div>
             ))}
 
-            <div className="mx-5 ">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.940644922175!2d3.97032207454389!3d7.360550612871552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1039ed45137ea7f7%3A0xcc1375193f56e3ad!2sIbadan%20Airport!5e0!3m2!1sen!2sng!4v1731680258996!5m2!1sen!2sng"
-                style={{ border: "0", height: "40vh", marginBottom: "20px" }}
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
+            <div className="flex items-center justify-center gap-4 text-lg text-white pb-10">
+              <a
+                href="https://wa.me/2347016367643"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p className="bg-gray-800 rounded-full p-2">
+                  <FaWhatsapp />
+                </p>
+              </a>
+
+              <a
+                href="https://t.me/paulTechy"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p className="bg-gray-800 rounded-full p-2">
+                  <FaTelegram/>
+                </p>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/Adebayo Opeyemi Paul"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p className="bg-gray-800 rounded-full p-2">
+                  <FaLinkedin/>
+                </p>
+              </a>
+
+              <a href="">
+                <p className="bg-gray-800 rounded-full p-2">
+                  <FaTwitter />
+                </p>
+              </a>
             </div>
           </div>
         </div>
       </div>
       <div
-        className="absolute right-10 mt-16 bg-[#149ddd] text-white text-xl p-2 rounded-full"
+        className="absolute right-10 bg-[#149ddd] text-white text-xl p-2 rounded-full"
         onClick={top}
       >
         <FaArrowUp />
