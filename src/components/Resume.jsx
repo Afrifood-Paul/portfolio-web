@@ -172,7 +172,7 @@ const Resume = () => {
                 <p>For More Details:</p>
                 <button
                   onClick={handleDownload}
-                  className="bg-[#149ddd] px-10 py-2 text-white rounded-xl"
+                  className="bg-[#173b6c] px-10 py-2 text-white rounded-xl"
                 >
                   Download Cv
                 </button>

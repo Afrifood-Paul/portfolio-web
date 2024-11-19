@@ -32,13 +32,14 @@ const Navbar = () => {
           !open && "scale-0 xl:scale-100"
         }`}
       >
-        <div className="mx-auto w-[30%]">
+        <div className="mx-auto w-[30%] flex justify-center">
           <img
             src={logo}
             alt="profile"
-            className="rounded-[50%] w-32 h-32 border-[#222]"
+            className="rounded-full w-32 h-32 border-2 border-[#222] object-cover"
           />
         </div>
+
         <h1 className="text-[#149ddd] text-lg pt-2 text-center font-bold">
           PaulTechy
         </h1>

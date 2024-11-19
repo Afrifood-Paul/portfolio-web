@@ -18,13 +18,13 @@ const Portfolio = () => {
         <p className="border-b-4 border-[#149ddd] w-14 pt-3 xl:ms-5"></p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 md:mx-10 lg:mx-0">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 md:mx-10 lg:mx-5">
         <div className="w-full h-auto md:py-10 rounded-lg flex flex-col group">
           <motion.div
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: 100 }}
             transition={{ duration: 1.2 }}
-            className="w-full h-[80%] overflow-hidden rounded-lg"
+            className="w-full h-[80%] overflow-hidden rounded-lg border-8"
           >
             <img
               className="w-full h-60 object-cover group-hover:scale-110 duration-300"
@@ -49,7 +49,7 @@ const Portfolio = () => {
                 href="https://heritagecapitals.com.ng/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-orange-500 duration-300 cursor-pointer"
+                className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-white duration-300 cursor-pointer"
               >
                 <TbWorldWww />
               </a>
@@ -68,7 +68,7 @@ const Portfolio = () => {
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: 100 }}
             transition={{ duration: 1.2 }}
-            className="w-full h-[80%] overflow-hidden rounded-lg"
+            className="w-full h-[80%] overflow-hidden rounded-lg border-8"
           >
             <img
               className="w-full h-60 object-cover group-hover:scale-110 duration-300"
@@ -93,7 +93,7 @@ const Portfolio = () => {
                 href="https://harmoniespringschools.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-orange-500 duration-300 cursor-pointer"
+                className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-white duration-300 cursor-pointer"
               >
                 <TbWorldWww />
               </a>
@@ -107,12 +107,12 @@ const Portfolio = () => {
           ></motion.div>
         </div>
 
-        <div className="w-full h-auto py-10 rounded-lg flex flex-col border-r-2 group">
+        <div className="w-full h-auto py-10 rounded-lg flex flex-col group">
           <motion.div
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: 100 }}
             transition={{ duration: 1.2 }}
-            className="w-full h-[80%] overflow-hidden rounded-lg"
+            className="w-full h-[80%] overflow-hidden rounded-lg border-8"
           >
             <img
               className="w-full h-60 object-cover group-hover:scale-110 duration-300"
@@ -139,7 +139,7 @@ const Portfolio = () => {
                 href="http://www.openmindedservices.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-orange-500 duration-300 cursor-pointer"
+                className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-white duration-300 cursor-pointer"
               >
                 <TbWorldWww />
               </a>
